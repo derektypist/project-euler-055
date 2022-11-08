@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Euler 055 - Lychrel Numbers</title>
     <!-- Load Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Set Up Header -->
     <header class="container-fluid text-center">
@@ -19,12 +22,20 @@
     <!-- Set Up Instructions -->
     <section class="container-fluid">
         <p>If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.</p>
-        <p>Not all numbers produce palindromes so quickly.  For example:</p>
+        <p>Not all numbers produce palindromes so quickly. For example:</p>
         <p><span class="terms">349 + 943 = 1292, 1292 + 2921 = 4213, 4213 + 3124 = 7337</span></p>
         <p>That is, 349 took three iterations to arrive at a palindrome.</p>
-        <p>Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome.  A number that never forms a palindrome through the reverse and add process is called a Lychrel number.  Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise.  In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome.  In fact, 10677 is the first number to be shown to require over 50 iterations before producing a palindrome: 4668731596684224866951378644 (53 iterations, 28 digits).</p>
-        <p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994.</p>
-        <p>How many Lychrel numbers are below the limit.  Begin by entering a number.</p>
+        <p>Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome. A
+            number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to
+            the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number
+            is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it
+            will either (i) become a palindrome in less than fifty iterations, or (ii) no one, with all the computing
+            power that exists, has managed so far to map it to a palindrome. In fact, 10677 is the first number to be
+            shown to require over 50 iterations before producing a palindrome: 4668731596684224866951378644 (53
+            iterations, 28 digits).</p>
+        <p>Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994.
+        </p>
+        <p>How many Lychrel numbers are below the limit? Begin by entering a number.</p>
     </section>
 
     <!-- Set Up Form -->
@@ -33,7 +44,8 @@
             <!-- Set Up Label and Input -->
             <article class="mb-3">
                 <label for="mylimit" class="form-label">Limit (Required)</label>
-                <input class="form-control" title="Enter whole number between 100 and 10000 (without leading zeros)" placeholder="Enter whole number between 100 and 10000 (without leading zeros)" id="mylimit">
+                <input class="form-control" title="Enter whole number between 100 and 10000 (without leading zeros)"
+                    placeholder="Enter whole number between 100 and 10000 (without leading zeros)" id="mylimit">
             </article>
 
             <!-- Set Up and Center Buttons -->
@@ -50,4 +62,5 @@
         <script src="js/script.js"></script>
     </section>
 </body>
+
 </html>
