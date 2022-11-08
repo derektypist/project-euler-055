@@ -9,7 +9,7 @@ function getLimitInfo() {
         txt += `Invalid Input.  Please enter a whole number between 100 and 10000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the limit of ${num}. <p>`;
-        txt += `There are ${countLychrelNumbers(num)} below ${num}.`;
+        txt += `There are ${countLychrelNumbers(num)} Lychrel Numbers below ${num}.`;
     }
 
     // Display Information in the Browser
