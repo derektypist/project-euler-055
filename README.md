@@ -18,6 +18,10 @@ Information at [Project Euler 055](https://projecteuler.net/problem=55)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 100 and 10000 (without leading zeros such as 0100) in the input field and select the Submit button.  You will see the number of Lychrel numbers below that limit, unless you have made an invalid input.  For example, if you selected 1000, you would expect the result to return 13.  Select the Reset button to clear the information or to start again.
+
 **User Stories**
 
 As a user, I expect the function `countLychrelNumbers(1000)` to return a number.
