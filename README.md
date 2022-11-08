@@ -42,6 +42,31 @@ User Stories on function `countLychrelNumbers(num)` taken from [FreeCodeCamp - C
 
 The function `countLychrelNumbers(num)` returns a number, where `num` is a number between 100 and 10000.
 
+## Features
 
+Allows the user to enter the limit (as a number) in order to count the Lychrel Numbers below that limit.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-055) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
 
 
