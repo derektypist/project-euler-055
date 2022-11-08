@@ -15,3 +15,33 @@ function getLimitInfo() {
     // Display Information in the Browser
     document.getElementById("limitinfo").innerHTML = txt;
 }
+
+/*
+    Function to return the count of all Lychrel Numbers below the limit num
+    countLychrelNumbers(1000)  returns 13
+    countLychrelNumbers(3243)  returns 39
+    countLychrelNumbers(5000)  returns 76
+    countLychrelNumbers(7654)  returns 140
+    countLychrelNumbers(10000) returns 249
+*/
+function countLychrelNumbers(num) {
+    const numReverse = (n) => Number(n.toString().split('').reverse().join(''));
+
+    const isPalindrome = (n) => numReverse(n) === n;
+
+    let total = 0;
+    for (let i=1;i<num;i++) {
+        let loopCount = 1;
+        let sum = i;
+        while (loopCount < 50) {
+            sum = sum + numReverse(sum);
+            if (isPalindrome(sum)) {
+                break;
+            } else {
+                loopCount++;
+            }
+        }
+        if (loopCount === 50) total++;
+    }
+    return total;
+}
