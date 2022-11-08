@@ -5,7 +5,7 @@ function getLimitInfo() {
     // Get the value of the input field
     let num = document.getElementById("mylimit").value;
     // Check if the input is valid
-    if (isNaN(num) || num.length==0 || num<100 || num>10000 || (num.length>1 && num[0] == "0") || !Number.isInteger(Number(num))) {
+    if (isNaN(num) || num.length == 0 || num < 100 || num > 10000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
         txt += `Invalid Input.  Please enter a whole number between 100 and 10000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the limit of ${num}. <p>`;
@@ -30,7 +30,7 @@ function countLychrelNumbers(num) {
     const isPalindrome = (n) => numReverse(n) === n;
 
     let total = 0;
-    for (let i=1;i<num;i++) {
+    for (let i = 1; i < num; i++) {
         let loopCount = 1;
         let sum = i;
         while (loopCount < 50) {
